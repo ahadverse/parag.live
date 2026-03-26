@@ -1,0 +1,21 @@
+.container {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 20px;
+}
+.container a {
+    color: var(--text);
+}
+.container a:hover {
+    color: var(--accent);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

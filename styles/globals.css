@@ -1,0 +1,464 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════
+   THEME SYSTEM — CSS Custom Properties
+   ═══════════════════════════════════════════ */
+
+[data-theme="dark"] {
+  --bg: #0d0d0d;
+  --bg-alt: #111111;
+  --surface: #1a1a1a;
+  --surface-2: #1e1e1e;
+  --surface-hover: #252525;
+  --border: #2a2a2a;
+  --border-light: #333333;
+  --accent: #e91e8c;
+  --accent-hover: #ff2da0;
+  --accent-dim: rgba(233, 30, 140, 0.12);
+  --accent-glow: rgba(233, 30, 140, 0.25);
+  --text: #ffffff;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
+  --text-inverse: #111111;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --card-glow: 0 0 0 1px var(--border), 0 0 20px rgba(233, 30, 140, 0.05);
+  --scrollbar-bg: #1a1a1a;
+  --scrollbar-thumb: #e91e8c;
+}
+
+[data-theme="light"] {
+  --bg: #f5f5f5;
+  --bg-alt: #ebebeb;
+  --surface: #ffffff;
+  --surface-2: #fafafa;
+  --surface-hover: #f0f0f0;
+  --border: #e0e0e0;
+  --border-light: #eeeeee;
+  --accent: #e91e8c;
+  --accent-hover: #d4187f;
+  --accent-dim: rgba(233, 30, 140, 0.08);
+  --accent-glow: rgba(233, 30, 140, 0.15);
+  --text: #111111;
+  --text-secondary: #555555;
+  --text-muted: #999999;
+  --text-inverse: #ffffff;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #dc2626;
+  --info: #2563eb;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --card-glow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --scrollbar-bg: #f5f5f5;
+  --scrollbar-thumb: #e91e8c;
+}
+
+/* ═══════════════════════════════════════════
+   BASE STYLES
+   ═══════════════════════════════════════════ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif !important;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover);
+}
+
+/* Links */
+a {
+  transition: color 0.2s ease;
+}
+
+/* ═══════════════════════════════════════════
+   BUTTONS
+   ═══════════════════════════════════════════ */
+
+.btn-accent {
+  background: var(--accent) !important;
+  color: #fff !important;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-accent:hover {
+  background: var(--accent-hover) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.btn-ghost {
+  background: transparent !important;
+  color: var(--text-secondary) !important;
+  border: 1px solid var(--border);
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent) !important;
+  background: var(--accent-dim) !important;
+}
+
+.btn-secondary {
+  background: var(--surface-2) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border);
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-secondary:hover {
+  background: var(--surface-hover) !important;
+  border-color: var(--border-light);
+}
+
+/* ═══════════════════════════════════════════
+   CARDS
+   ═══════════════════════════════════════════ */
+
+.themed-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--card-glow);
+  transition: all 0.2s ease;
+}
+.themed-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+/* ═══════════════════════════════════════════
+   FORM INPUTS
+   ═══════════════════════════════════════════ */
+
+.themed-input {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.themed-input::placeholder {
+  color: var(--text-muted);
+}
+.themed-input:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+
+.themed-select {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.875rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+.themed-select:focus {
+  border-color: var(--accent) !important;
+}
+
+/* ═══════════════════════════════════════════
+   TYPOGRAPHY
+   ═══════════════════════════════════════════ */
+
+.text-themed {
+  color: var(--text);
+}
+.text-themed-secondary {
+  color: var(--text-secondary);
+}
+.text-themed-muted {
+  color: var(--text-muted);
+}
+.text-accent {
+  color: var(--accent);
+}
+
+.heading-xl {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+.heading-lg {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+.heading-md {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ═══════════════════════════════════════════
+   LAYOUT UTILITIES
+   ═══════════════════════════════════════════ */
+
+.page-bg {
+  background: var(--bg);
+  min-height: 100vh;
+}
+.surface-bg {
+  background: var(--surface);
+}
+.surface-2-bg {
+  background: var(--surface-2);
+}
+
+/* ═══════════════════════════════════════════
+   ANT DESIGN OVERRIDES
+   ═══════════════════════════════════════════ */
+
+.ant-table-body {
+  overflow-y: hidden !important;
+}
+.ant-upload,
+.ant-upload-list-item-container {
+  width: 50% !important;
+  height: 300px !important;
+}
+.ant-upload-list {
+  display: flex !important;
+}
+.ant-upload {
+  margin: auto !important;
+}
+.ant-btn {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+.ant-btn:hover {
+  background: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+}
+.anticon {
+  font-size: 20px !important;
+}
+.ant-upload-list-item-thumbnail img {
+  object-fit: cover !important;
+}
+.ant-pagination-item-active {
+  border-color: var(--accent) !important;
+}
+.ant-pagination-item-active a {
+  color: var(--accent) !important;
+}
+.ant-pagination-item {
+  background: var(--surface) !important;
+  border-color: var(--border) !important;
+}
+.ant-pagination-item a {
+  color: var(--text) !important;
+}
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  background: var(--surface) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
+.ant-select-selector {
+  background: var(--surface) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
+
+.profile .ant-upload-list-item-container {
+  margin: auto !important;
+}
+
+/* ═══════════════════════════════════════════
+   TABLE STYLES
+   ═══════════════════════════════════════════ */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid var(--border);
+  text-align: left;
+  padding: 10px 12px;
+  color: var(--text);
+}
+th {
+  background: var(--surface-2);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+/* ═══════════════════════════════════════════
+   SCROLL TO TOP
+   ═══════════════════════════════════════════ */
+
+.scroll-to-top {
+  background: var(--accent) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px var(--accent-glow) !important;
+  border-radius: 50% !important;
+  z-index: 20 !important;
+}
+.scroll-to-top svg {
+  fill: #fff !important;
+  margin: auto;
+  width: 22px !important;
+}
+
+/* ═══════════════════════════════════════════
+   COUNTRY SECTION TABS
+   ═══════════════════════════════════════════ */
+
+.uppercase {
+  font-size: 25px !important;
+}
+
+.Australia,
+.Canada,
+.Europe,
+.Latin,
+.United {
+  background: var(--accent);
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.Canada {
+  margin-left: auto;
+  margin-top: -36px;
+  width: 49.5%;
+}
+.Australia,
+.Europe,
+.Latin {
+  width: 50%;
+}
+
+.active {
+  background: var(--accent) !important;
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .uppercase {
+    font-size: 15px !important;
+  }
+  .Australia,
+  .Canada,
+  .Europe,
+  .Latin,
+  .United {
+    background: var(--accent);
+    width: 100%;
+    overflow: hidden;
+  }
+  .Canada {
+    margin-left: 0;
+  }
+  .Australia,
+  .Europe,
+  .Latin,
+  .United {
+    padding: 0px;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   THEME TOGGLE BUTTON
+   ═══════════════════════════════════════════ */
+
+.theme-toggle {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ═══════════════════════════════════════════
+   LOADING SPINNER
+   ═══════════════════════════════════════════ */
+
+.themed-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}

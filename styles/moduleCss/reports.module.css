@@ -1,0 +1,16 @@
+.reportContainer {
+    margin-top: 50px;
+    width: 50%;
+    margin: 50px auto auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+@media only screen and (max-width: 768px) {
+    .reportContainer {
+        width: 90%;
+    }
+}

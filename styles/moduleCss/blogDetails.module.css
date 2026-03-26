@@ -1,0 +1,136 @@
+.category,
+.category1,
+.category2,
+.category3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-gap: 30px;
+  width: 90%;
+  margin: 20px auto auto;
+}
+.blogImages {
+  width: fit-content;
+  margin: auto;
+  height: fit-content;
+  border-radius: 8px;
+}
+.category {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+.blogCntainer .card {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 350px;
+  background: var(--surface);
+  position: relative;
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+}
+.blogImage {
+  width: 100%;
+  height: 210px;
+  border-radius: 8px 8px 0 0;
+}
+.cardFooter {
+  position: absolute;
+  bottom: 1%;
+  display: flex;
+  gap: 30px;
+}
+.category1 {
+  border: 1px solid var(--info);
+  color: var(--info);
+}
+.category2 {
+  border: 1px solid #c003c7;
+  color: #c003c7;
+}
+.category3 {
+  border: 1px solid #c75803;
+  color: #c75803;
+}
+
+.desc h1 {
+  color: var(--text);
+  font-size: 2em;
+  font-weight: bolder;
+}
+.desc h2 {
+  color: var(--text);
+  font-size: 24px;
+  font-weight: bolder;
+}
+.desc h3 {
+  color: var(--text);
+  font-size: 1.17em;
+  font-weight: bolder;
+}
+.desc h4 {
+  color: var(--text);
+  font-size: 1em;
+  font-weight: bolder;
+}
+.desc h5 {
+  color: var(--text);
+  font-size: 0.83em;
+  font-weight: bolder;
+}
+.desc h6 {
+  color: var(--text);
+  font-size: 0.67em;
+  font-weight: bolder;
+}
+.desc a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.desc p {
+  color: var(--text);
+}
+.blogContainer {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+}
+.othersLinkImage {
+  margin: 2px auto;
+  border-radius: 6px;
+}
+.othersLinkContainer {
+  width: 270px;
+  margin: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 5px;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+.othersLinkContainer:hover {
+  border-color: var(--accent);
+}
+
+@media only screen and (max-width: 768px) {
+  .blogContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .mainContainer {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .blogImages {
+    width: 100%;
+    height: fit-content;
+  }
+  .desc {
+    width: 320px;
+  }
+}
