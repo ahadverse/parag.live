@@ -112,7 +112,7 @@ const Blogs = () => {
 
         {isloading ? (
           <div className='themed-loader'>
-            <img width={100} src='/loader.gif' alt='skipthegames.love' />
+            <img width={100} src='/loader.gif' alt='parag.live' />
           </div>
         ) : (
           <>

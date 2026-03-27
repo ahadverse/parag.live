@@ -75,7 +75,7 @@ const Details = () => {
         <link
           name='canonical'
           rel='canonical'
-          href={`https://skipthegames.love${router?.asPath}`}
+          href={`https://parag.live${router?.asPath}`}
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='keywords' content={`${meta?.keywords}`} />
@@ -240,7 +240,7 @@ const Details = () => {
         >
           {loading ? (
             <div className='themed-loader'>
-              <img width={100} src='/loader.gif' alt='skipthegames.love' />
+              <img width={100} src='/loader.gif' alt='parag.live' />
             </div>
           ) : (
             <>

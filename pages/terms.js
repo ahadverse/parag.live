@@ -5,8 +5,18 @@ const Footer = dynamic(() => import("@/component/footer/footer"));
 const Header = dynamic(() => import("@/component/header/header"));
 
 const Terms = () => {
-  const s = { color: "var(--text-secondary)", lineHeight: 1.8, marginBottom: "12px" };
-  const h = { fontSize: "1.25rem", fontWeight: 700, color: "var(--accent)", marginBottom: "12px", marginTop: "24px" };
+  const s = {
+    color: "var(--text-secondary)",
+    lineHeight: 1.8,
+    marginBottom: "12px",
+  };
+  const h = {
+    fontSize: "1.25rem",
+    fontWeight: 700,
+    color: "var(--accent)",
+    marginBottom: "12px",
+    marginTop: "24px",
+  };
 
   return (
     <div className='page-bg'>
@@ -15,18 +25,58 @@ const Terms = () => {
         <link rel='icon' href='/logo.png' />
       </Head>
       <Header />
-      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "32px 16px" }}>
-        <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "12px", padding: "32px", boxShadow: "var(--shadow)" }}>
-          <h1 style={{ fontSize: "1.5rem", fontWeight: 700, color: "var(--accent)", marginBottom: "16px" }}>Terms</h1>
-          <hr style={{ border: "none", borderTop: "1px solid var(--border)", marginBottom: "20px" }} />
+      <div
+        style={{ maxWidth: "900px", margin: "0 auto", padding: "32px 16px" }}
+      >
+        <div
+          style={{
+            background: "var(--surface)",
+            border: "1px solid var(--border)",
+            borderRadius: "12px",
+            padding: "32px",
+            boxShadow: "var(--shadow)",
+          }}
+        >
+          <h1
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: 700,
+              color: "var(--accent)",
+              marginBottom: "16px",
+            }}
+          >
+            Terms
+          </h1>
+          <hr
+            style={{
+              border: "none",
+              borderTop: "1px solid var(--border)",
+              marginBottom: "20px",
+            }}
+          />
           <p style={{ ...s, fontWeight: 600, color: "var(--text)" }}>
-            Updated December 27, 2025<br /><br />Objectives/Content:
+            Updated December 27, 2025
+            <br />
+            <br />
+            Objectives/Content:
           </p>
           <p style={s}>
-            The Site reserves the privilege to alter the Terms at any time and for almost any reason. Updated versions of the Conditions will undoubtedly be submitted to the Site in Skip the games.com and also you should visit this page periodically to keep apprised of any changes. By continuing to make use of the Site after any such change, you accept and agree on the modified Terms. You agree that the website will not be responsible for you personally or some other third party for practically any modification or discontinuance of the website.
+            The Site reserves the privilege to alter the Terms at any time and
+            for almost any reason. Updated versions of the Conditions will
+            undoubtedly be submitted to the Site in parag.com and also you
+            should visit this page periodically to keep apprised of any changes.
+            By continuing to make use of the Site after any such change, you
+            accept and agree on the modified Terms. You agree that the website
+            will not be responsible for you personally or some other third party
+            for practically any modification or discontinuance of the website.
           </p>
-          <p style={{ ...s, fontWeight: 700, color: "var(--text)" }}>Consumer Conduct:</p>
-          <p style={s}>Without limitation, you agree to refrain from the following actions while using the Site:</p>
+          <p style={{ ...s, fontWeight: 700, color: "var(--text)" }}>
+            Consumer Conduct:
+          </p>
+          <p style={s}>
+            Without limitation, you agree to refrain from the following actions
+            while using the Site:
+          </p>
           {[
             "Harassing, threatening, embarrassing or causing distress or discomfort upon another individual or entity or impersonating any person or entity or otherwise restricting or inhibiting any other person from using or enjoying the Site;",
             "Transmitting any information, data, text, files, hyperlinks, software, chats, communication or other materials which is unlawful, false, misleading, dangerous, threatening, abusive, invasive of a person's privacy, harassing, defamatory, vulgar, disgusting, hateful or racially or otherwise objectionable;",
@@ -47,23 +97,83 @@ const Terms = () => {
             "Posting Totally Free ads promoting links to commercial providers except in areas explicitly permitted;",
             "Putting up any material advertisements firearms that the use, carrying, or advertising which is prohibited by applicable national, state, or community authorities.",
           ].map((item, i) => (
-            <p key={i} style={s}>{i + 1}. {item}</p>
+            <p key={i} style={s}>
+              {i + 1}. {item}
+            </p>
           ))}
 
-          <p style={{ ...s, fontWeight: 700, color: "var(--text)", marginTop: "24px" }}>Use of Materials:</p>
-          <p style={s}>Any messages or ads that you submit, transmit, or make available for viewing on public aspects of the website are going to be medicated since it is non-confidential and non-proprietary. You grant the Site the irrevocable right to use and/or edit your ads and messages for almost any purpose whatsoever.</p>
+          <p
+            style={{
+              ...s,
+              fontWeight: 700,
+              color: "var(--text)",
+              marginTop: "24px",
+            }}
+          >
+            Use of Materials:
+          </p>
+          <p style={s}>
+            Any messages or ads that you submit, transmit, or make available for
+            viewing on public aspects of the website are going to be medicated
+            since it is non-confidential and non-proprietary. You grant the Site
+            the irrevocable right to use and/or edit your ads and messages for
+            almost any purpose whatsoever.
+          </p>
 
-          <p style={{ ...s, fontWeight: 700, color: "var(--text)", marginTop: "24px" }}>Fair Housing:</p>
-          <p style={s}>Title VIII of the Civil Rights Act of 1968 (Fair Housing Act), as amended, prohibits discrimination in the sale, rental, and financing of dwellings. The Site is not going to knowingly accept any real estate advertising which is in violation of any pertinent law.</p>
+          <p
+            style={{
+              ...s,
+              fontWeight: 700,
+              color: "var(--text)",
+              marginTop: "24px",
+            }}
+          >
+            Fair Housing:
+          </p>
+          <p style={s}>
+            Title VIII of the Civil Rights Act of 1968 (Fair Housing Act), as
+            amended, prohibits discrimination in the sale, rental, and financing
+            of dwellings. The Site is not going to knowingly accept any real
+            estate advertising which is in violation of any pertinent law.
+          </p>
 
           <h2 style={h}>Disclaimer:</h2>
-          <hr style={{ border: "none", borderTop: "1px solid var(--border)", marginBottom: "16px" }} />
-          <p style={s}>USE OF THIS SITE IS AT YOUR OWN RISK. THE SITE IS NOT RESPONSIBLE FOR ANY CONTENT FOUND ON THESE CLASSIFIEDS. THE SITE IS PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS.</p>
+          <hr
+            style={{
+              border: "none",
+              borderTop: "1px solid var(--border)",
+              marginBottom: "16px",
+            }}
+          />
+          <p style={s}>
+            USE OF THIS SITE IS AT YOUR OWN RISK. THE SITE IS NOT RESPONSIBLE
+            FOR ANY CONTENT FOUND ON THESE CLASSIFIEDS. THE SITE IS PROVIDED ON
+            AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS.
+          </p>
 
-          <p style={{ ...s, fontWeight: 700, color: "var(--text)", marginTop: "24px" }}>Limitation of Obligation:</p>
-          <p style={s}>The advice services available for your requirements on this Site could contain errors and are susceptible to periods of interruption. By applying the site, you agree to defend, indemnify and hold harmless the indemnified parties from all liability regarding your use of the website.</p>
+          <p
+            style={{
+              ...s,
+              fontWeight: 700,
+              color: "var(--text)",
+              marginTop: "24px",
+            }}
+          >
+            Limitation of Obligation:
+          </p>
+          <p style={s}>
+            The advice services available for your requirements on this Site
+            could contain errors and are susceptible to periods of interruption.
+            By applying the site, you agree to defend, indemnify and hold
+            harmless the indemnified parties from all liability regarding your
+            use of the website.
+          </p>
 
-          <p style={s}>Skip the games.com can be a web site that hosts categorized advertisements and relevant articles. Your use of the website is governed by these Conditions of Use and the Privacy Policy.</p>
+          <p style={s}>
+            parag.com can be a web site that hosts categorized advertisements
+            and relevant articles. Your use of the website is governed by these
+            Conditions of Use and the Privacy Policy.
+          </p>
         </div>
       </div>
       <Footer />

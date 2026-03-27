@@ -96,8 +96,8 @@ const TestingRecharge = () => {
                 {users?.credit?.toFixed(2) || 0}
               </h1>
               <p>
-                Add Credits in your Skipthegames account to post & upgrade your
-                Ad. <br />
+                Add Credits in your parag account to post & upgrade your Ad.{" "}
+                <br />
                 After one ads promotion, remaining credits will be still
                 available in your account for feature ads promotions!
               </p>

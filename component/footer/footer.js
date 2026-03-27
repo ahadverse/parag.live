@@ -98,16 +98,16 @@ const Footer = () => {
           )}
         </div>
 
-        <hr
+        {/* <hr
           style={{
             border: "none",
             borderTop: "1px solid var(--border)",
             marginBottom: "24px",
           }}
-        />
+        /> */}
 
         {/* SEO links */}
-        <div
+        {/* <div
           style={{
             display: "flex",
             flexWrap: "wrap",
@@ -117,7 +117,7 @@ const Footer = () => {
           }}
         >
           {[
-            { href: "/skip-the-games", label: "Skip the Games" },
+            { href: "/skip-the-games", label: "parag" },
             { href: "/female-escort", label: "Female Escort" },
             {
               href: "/tryst-san-antonio-escorts",
@@ -150,7 +150,7 @@ const Footer = () => {
               {l.label}
             </Link>
           ))}
-        </div>
+        </div> */}
 
         <hr
           style={{

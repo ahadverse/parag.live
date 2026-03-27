@@ -3,7 +3,7 @@ import Header2 from "@/component/header/header2";
 import Head from "next/head";
 import React from "react";
 
-const Skipthegameswv = () => {
+const paragwv = () => {
   return (
     <div>
       <Head>
@@ -196,4 +196,4 @@ const Skipthegameswv = () => {
   );
 };
 
-export default Skipthegameswv;
+export default paragwv;

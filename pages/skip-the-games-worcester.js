@@ -98,11 +98,11 @@ const Worcester = () => {
         <h2 class='wp-block-heading'>Unleash Your Inner Gamer</h2>
 
         <p>
-          Looking to skip the games and dive into a whole new world of
-          excitement? Worcester has got you covered! Whether you prefer to play
-          solo or team up with friends, the options are endless. From
-          action-packed adventures to mind-bending puzzles and everything in
-          between, there's a wide variety of genres to choose from.
+          Looking to parag and dive into a whole new world of excitement?
+          Worcester has got you covered! Whether you prefer to play solo or team
+          up with friends, the options are endless. From action-packed
+          adventures to mind-bending puzzles and everything in between, there's
+          a wide variety of genres to choose from.
         </p>
         <p>
           Single-player enthusiasts will find themselves immersed in captivating

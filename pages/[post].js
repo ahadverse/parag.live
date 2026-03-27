@@ -25,7 +25,7 @@ const PostList = () => {
   const [gallery, setGallery] = useState([]);
   const [links, setLinks] = useState();
   const [age, setAge] = useState("");
-  const [category, setCategory] = useState("Adult Jobs");
+  const [category, setCategory] = useState("Women-Men");
   const [reload, setReload] = useState(false);
 
   async function getPosts() {
@@ -130,7 +130,7 @@ const PostList = () => {
         <link
           name='canonical'
           rel='canonical'
-          href={`https://skipthegames.love${router?.asPath}`}
+          href={`https://parag.live${router?.asPath}`}
         />
         <meta name='robots' content='index,follow' />
       </Head>

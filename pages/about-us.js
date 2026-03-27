@@ -48,8 +48,8 @@ const AboutUs = () => {
             About Us
           </h1>
           <p style={{ ...sectionStyle, fontSize: "1.1rem" }}>
-            Hello, Dear friends, Welcome to Skipthegames also, we are happy you
-            want to know something more about our site
+            Hello, Dear friends, Welcome to parag also, we are happy you want to
+            know something more about our site
           </p>
           <p style={sectionStyle}>
             So, basically, nowadays people are more dependent on online products
@@ -73,7 +73,7 @@ const AboutUs = () => {
           <p style={sectionStyle}>
             If you have additional questions or require more information about
             our About Us Page, do not hesitate to contact us through email at{" "}
-            <b style={{ color: "var(--accent)" }}>skipthegames010@gmail.com</b>
+            <b style={{ color: "var(--accent)" }}>parag010@gmail.com</b>
           </p>
 
           <h2 style={headingStyle}>What is Our Goal?</h2>
@@ -104,57 +104,50 @@ const AboutUs = () => {
             you can visit daily to get more latest information.
           </p>
           <p style={sectionStyle}>
-            Find the ultimate pleasure without the hassle. Skip the games and
-            discover top-notch female escorts in CT, N.C, NJ, and more. Indulge
-            in a discreet and unforgettable experience with Escort Dude. Explore
+            Find the ultimate pleasure without the hassle. parag and discover
+            top-notch female escorts in CT, N.C, NJ, and more. Indulge in a
+            discreet and unforgettable experience with Escort Dude. Explore
             Tryst San Antonio escorts for an adventure like no other.
             Satisfaction guaranteed!
           </p>
           <p style={sectionStyle}>
-            On our website Skipthegames you get can all Free classified
-            advertisements related information also, we focus on many other
-            categories and we hope you like also, the content of other
-            categories that are maintained on our website. So, you can visit our
-            website homepage to know all category details here you can visit our
-            homepage Click here
+            On our website parag you get can all Free classified advertisements
+            related information also, we focus on many other categories and we
+            hope you like also, the content of other categories that are
+            maintained on our website. So, you can visit our website homepage to
+            know all category details here you can visit our homepage Click here
           </p>
           <p style={sectionStyle}>
             Also, we provide a Notification update service you can join by email
             and other Social Media Platforms, and all Links you can get on the
             Homepage visit now.{" "}
-            <a
-              href='https://skipthegames.love/'
-              style={{ color: "var(--accent)" }}
-            >
+            <a href='https://parag.live/' style={{ color: "var(--accent)" }}>
               {" "}
-              Skipthegames{" "}
+              parag{" "}
             </a>
           </p>
 
-          <h2 style={headingStyle}>About Skipthegames</h2>
+          <h2 style={headingStyle}>About parag</h2>
           <p style={sectionStyle}>
             As you can see already we mention what is our goal and Service again
             we repeat that we mainly focus on Free classified advertisements
             Category to help people.
           </p>
           <p style={sectionStyle}>
-            This Website is Created By Skipthegames to help people because many
-            people are still spending hours of time to get exact information so,
-            this is the only motive to create{" "}
-            <a
-              href='https://skipthegames.love/'
-              style={{ color: "var(--accent)" }}
-            >
-              Skipthegames
+            This Website is Created By parag to help people because many people
+            are still spending hours of time to get exact information so, this
+            is the only motive to create{" "}
+            <a href='https://parag.live/' style={{ color: "var(--accent)" }}>
+              parag
             </a>{" "}
             to help people and provide them a better web experience.
           </p>
 
-          <h2 style={headingStyle}>Admin&apos;s Statement for Skipthegames</h2>
+          <h2 style={headingStyle}>Admin&apos;s Statement for parag</h2>
           <p style={sectionStyle}>
             As per my point of view, there are many people who visit the
             internet to get some information but 90% of the time they get wrong
-            information so, the first priority of our website Skipthegames is to
+            information so, the first priority of our website parag is to
             provide 100% legit and accurate information to our users, Also, I
             hope my dream comes true one day, and our website will provide
             Original Content to provide a better user experience. So, From my
@@ -176,16 +169,13 @@ const AboutUs = () => {
           </p>
           <p style={sectionStyle}>
             Finally, this is our complete about us page about details are
-            showing what is the motive to create Skipthegames.
+            showing what is the motive to create parag.
           </p>
           <p style={sectionStyle}>
             If you want to contact us then you can contact us by our contact us
             form. Go to homepage{" "}
-            <a
-              href='https://skipthegames.love/'
-              style={{ color: "var(--accent)" }}
-            >
-              Skipthegames
+            <a href='https://parag.live/' style={{ color: "var(--accent)" }}>
+              parag
             </a>
           </p>
           <p

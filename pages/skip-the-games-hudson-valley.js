@@ -3,14 +3,13 @@ import Header2 from "@/component/header/header2";
 import Head from "next/head";
 import React from "react";
 
-const Skipthegameshudsonvalley = () => {
+const paraghudsonvalley = () => {
   return (
     <div>
       <Head>
         <title>
           Looking for PARAG in the Hudson Valley area? You can find a variety of
-          listings for adult services and entertainment on Skip The Games
-          website.
+          listings for adult services and entertainment on parag website.
         </title>
         <meta
           name='title'
@@ -24,8 +23,7 @@ const Skipthegameshudsonvalley = () => {
         <p>
           <strong>
             Looking for PARAG in the Hudson Valley area? You can find a variety
-            of listings for adult services and entertainment on Skip The Games
-            website.
+            of listings for adult services and entertainment on parag website.
           </strong>
         </p>
 
@@ -318,4 +316,4 @@ const Skipthegameshudsonvalley = () => {
   );
 };
 
-export default Skipthegameshudsonvalley;
+export default paraghudsonvalley;

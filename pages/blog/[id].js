@@ -68,7 +68,7 @@ const BlogDetails = () => {
           className='block m-auto'
           width={100}
           src='/loader.gif'
-          alt='skipthegames.love'
+          alt='parag.live'
         />
       ) : (
         <>

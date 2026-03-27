@@ -153,12 +153,7 @@ const Ahad = () => {
           style={{ height: "700px" }}
           className='flex justify-center items-center'
         >
-          <img
-            className=''
-            width={100}
-            src='/loader.gif'
-            alt='skipthegames.love'
-          />
+          <img className='' width={100} src='/loader.gif' alt='parag.live' />
         </div>
       ) : (
         <div
