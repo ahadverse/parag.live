@@ -48,13 +48,25 @@ const Header = () => {
         >
           <Image
             src='/logo.png'
-            alt='SkipTheGames'
-            width={60}
+            alt='Parag'
+            width={50}
             height={40}
             className='header-logo'
             style={{ objectFit: "contain" }}
             priority
           />
+          <span
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: 800,
+              color: "var(--accent)",
+              letterSpacing: "-0.02em",
+              marginLeft: "0px",
+              fontFamily: "Inter, sans-serif",
+            }}
+          >
+            PARAG
+          </span>
         </Link>
 
         {/* Desktop Nav */}
