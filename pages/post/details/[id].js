@@ -12,7 +12,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
 import { ImBlocked } from "react-icons/im";
 import { findPostMeta } from "@/component/postmeta";
-import ThemeToggle from "@/component/ThemeToggle";
+import Header from "@/component/header/header";
 
 const myLink = process.env.NEXT_PUBLIC_OFFERLINK;
 
@@ -81,43 +81,7 @@ const Details = () => {
         <meta name='keywords' content={`${meta?.keywords}`} />
       </Head>
 
-      {/* Header */}
-      <header
-        style={{
-          background: "var(--surface)",
-          borderBottom: "1px solid var(--border)",
-          height: "64px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "0 20px",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-          <Link href='/' style={{ textDecoration: "none" }}>
-            <h1
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: 800,
-                color: "var(--accent)",
-                margin: 0,
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              PARAG
-            </h1>
-          </Link>
-          <Link href='/user/post/' style={{ textDecoration: "none" }}>
-            <button
-              className='btn-accent hidden sm:inline-flex'
-              style={{ fontSize: "0.8rem", padding: "8px 18px" }}
-            >
-              + Post Ad
-            </button>
-          </Link>
-        </div>
-        <ThemeToggle />
-      </header>
+      <Header />
 
       {/* Top links bar */}
       <div

@@ -107,7 +107,7 @@ const Footer = () => {
         /> */}
 
         {/* SEO links */}
-        {/* <div
+        <div
           style={{
             display: "flex",
             flexWrap: "wrap",
@@ -117,23 +117,23 @@ const Footer = () => {
           }}
         >
           {[
-            { href: "/skip-the-games", label: "parag" },
+            { href: "/skip-the-games", label: "Parag" },
             { href: "/female-escort", label: "Female Escort" },
             {
               href: "/tryst-san-antonio-escorts",
               label: "Tryst San Antonio Escorts",
             },
-            { href: "/skipthe-games", label: "Skipthe Games" },
-            { href: "/skip-yhe-games", label: "Skip Yhe Games" },
-            { href: "#", label: "Akip The Games" },
+            { href: "/skipthe-games", label: "Parag Games" },
+            { href: "/skip-yhe-games", label: "Parag Live" },
+            { href: "#", label: "Parag Ads" },
             { href: "/tescorts", label: "Tescorts" },
-            { href: "/skip-the-games-wv", label: "PARAG WV" },
+            { href: "/skip-the-games-wv", label: "Parag WV" },
             {
               href: "/skip-the-games-hudson-valley",
-              label: "PARAG Hudson Valley",
+              label: "Parag Hudson Valley",
             },
-            { href: "/skip-the-games-worcester", label: "PARAG Worcester" },
-            { href: "/skip-the-games-cape-cod", label: "PARAG Cape Cod" },
+            { href: "/skip-the-games-worcester", label: "Parag Worcester" },
+            { href: "/skip-the-games-cape-cod", label: "Parag Cape Cod" },
           ].map((l) => (
             <Link
               key={l.href + l.label}
@@ -150,7 +150,7 @@ const Footer = () => {
               {l.label}
             </Link>
           ))}
-        </div> */}
+        </div>
 
         <hr
           style={{
