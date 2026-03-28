@@ -360,13 +360,13 @@ th {
 
 .scroll-to-top {
   background: var(--accent) !important;
-  color: white !important;
+  color: var(--text-inverse) !important;
   box-shadow: 0 4px 12px var(--accent-glow) !important;
   border-radius: 50% !important;
   z-index: 20 !important;
 }
 .scroll-to-top svg {
-  fill: #fff !important;
+  fill: var(--text-inverse) !important;
   margin: auto;
   width: 22px !important;
 }
