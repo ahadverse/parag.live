@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        accent: '#e91e8c',
-        'accent-hover': '#ff2da0',
+        accent: '#000000',
+        'accent-hover': '#292929',
       },
       fontFamily: {
         sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],

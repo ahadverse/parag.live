@@ -73,7 +73,13 @@ const AboutUs = () => {
           <p style={sectionStyle}>
             If you have additional questions or require more information about
             our About Us Page, do not hesitate to contact us through email at{" "}
-            <b style={{ color: "var(--accent)" }}>parag010@gmail.com</b>
+            <a
+              href='emailto:support@parag.live'
+              style={{ color: "var(--accent)" }}
+            >
+              {" "}
+              support@parag.live
+            </a>
           </p>
 
           <h2 style={headingStyle}>What is Our Goal?</h2>

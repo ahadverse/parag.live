@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { useSession, signOut } from "next-auth/react";
+import Image from "next/image";
 import ThemeToggle from "../ThemeToggle";
 
 const Header = () => {
@@ -37,19 +38,23 @@ const Header = () => {
         }}
       >
         {/* Logo */}
-        <Link href='/' style={{ textDecoration: "none" }}>
-          <h1
-            style={{
-              fontSize: "1.5rem",
-              fontWeight: 800,
-              color: "var(--accent)",
-              letterSpacing: "-0.02em",
-              margin: 0,
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
-            PARAG
-          </h1>
+        <Link
+          href='/'
+          style={{
+            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            src='/logo.png'
+            alt='SkipTheGames'
+            width={60}
+            height={40}
+            className='header-logo'
+            style={{ objectFit: "contain" }}
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

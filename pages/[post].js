@@ -256,7 +256,7 @@ const PostList = () => {
             style={{
               background: layout === l ? "var(--accent)" : "var(--surface)",
               border: `1px solid ${layout === l ? "var(--accent)" : "var(--border)"}`,
-              color: layout === l ? "#fff" : "var(--text-secondary)",
+              color: layout === l ? "var(--text-inverse)" : "var(--text-secondary)",
               fontWeight: layout === l ? 600 : 500,
               fontSize: "0.8rem",
               letterSpacing: "0.06em",

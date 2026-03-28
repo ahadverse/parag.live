@@ -62,7 +62,7 @@ const Dashboards = () => {
       text: "You won't be able to revert this!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#e91e8c",
+      confirmButtonColor: "#000000",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
