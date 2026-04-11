@@ -33,6 +33,7 @@ const PostList = () => {
       const response = await axios.get(
         `https://paraglive-backend.vercel.app/api/products/all?page=${current}&category=${category}&state=${router?.query?.post}`,
       );
+
       setLinks(response.data.links?.[0]);
       setPage(response.data.pages);
       setGallery(response.data.data.products);
@@ -256,7 +257,8 @@ const PostList = () => {
             style={{
               background: layout === l ? "var(--accent)" : "var(--surface)",
               border: `1px solid ${layout === l ? "var(--accent)" : "var(--border)"}`,
-              color: layout === l ? "var(--text-inverse)" : "var(--text-secondary)",
+              color:
+                layout === l ? "var(--text-inverse)" : "var(--text-secondary)",
               fontWeight: layout === l ? 600 : 500,
               fontSize: "0.8rem",
               letterSpacing: "0.06em",

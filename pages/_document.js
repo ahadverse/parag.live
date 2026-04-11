@@ -12,7 +12,7 @@ class WebDocument extends Document {
           />
           <Script
             async
-            src='https://www.googletagmanager.com/gtag/js?id=G-S5SPEY3G38'
+            src='https://www.googletagmanager.com/gtag/js?id=G-W7K9BEL1QF'
             strategy='afterInteractive'
           />
           <Script id='google-analytics' strategy='afterInteractive'>
@@ -20,13 +20,9 @@ class WebDocument extends Document {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-S5SPEY3G38');
+              gtag('config', 'G-W7K9BEL1QF');
             `}
           </Script>
-          <meta
-            name='google-site-verification'
-            content='calZG0FNtPPNU-IvNqzYv_1R_fyUbfj_KEDCV1h3zlk'
-          />
         </Head>
         <body>
           {/* Theme initialization script — runs before React hydration to prevent flash */}
